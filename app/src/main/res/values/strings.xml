@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dz3</string>
+    <string name="sunday_19_may_2019_9_30pm">Sunday, 19 May 2019 | 9:30PM</string>
+    <string name="sunny">Sunny</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="_73">73%</string>
+    <string name="pressure">Pressure</string>
+    <string name="_1_009mbar">1,009mBar</string>
+    <string name="_11km_h">11km/h</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="win">Wind</string>
+    <string name="_6_03_am">6:03 AM</string>
+    <string name="_52_19">52×19</string>
+    <string name="_7_05_pm">7:05 PM</string>
+    <string name="sunrise">sunrise</string>
+    <string name="_13h_1m">13h 1m</string>
+    <string name="daytime">Daytime</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunris">Sunrise</string>
+    <string name="snrise">Sunrise</string>
+    <string name="wed_22">Wed, 22</string>
+    <string name="mon_21">Mon, 21</string>
+</resources>

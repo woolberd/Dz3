@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/graphic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="412dp"
+            android:layout_height="500dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/sunday_19_may_2019_9_30pm"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:background="@drawable/oval"
+                android:drawableEnd="@drawable/location"
+                android:text="Mumbai, India"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/weather"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/vector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/weather_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:text="@string/cloudy"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weather" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="58dp"
+                android:text="29"
+                android:textColor="@color/black"
+                android:textSize="65sp"
+                app:layout_constraintEnd_toEndOf="@id/max_temp_tv"
+                app:layout_constraintStart_toStartOf="@id/weather"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/_c"
+                app:layout_constraintStart_toEndOf="@id/temperature"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/max_temp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/_c"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="35" />
+
+            <View
+                android:id="@+id/ve_max"
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__4_"
+                app:layout_constraintStart_toEndOf="@id/max_temp_tv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/max_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="20sp"
+                app:drawableEndCompat="@drawable/_c"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="27" />
+
+            <View
+                android:id="@+id/ve_maxi"
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/vector__3_"
+                app:layout_constraintStart_toEndOf="@id/max_temp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/rain_iv"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/_27_humidity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rain_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="73%"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rain_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:text="@string/humidity"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rain_et" />
+
+            <ImageView
+                android:id="@+id/rain_id"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/_50_barometer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:text="@string/_1_009mbar"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rain_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="175dp"
+                android:text="@string/pressure"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rain_et" />
+
+            <ImageView
+                android:id="@+id/wind"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="326dp"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/_01_wind_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wind_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:text="@string/_11km_h"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wind" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="325dp"
+                android:text="@string/wind"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wind_tv" />
+
+            <ImageView
+                android:id="@+id/sunset"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="250dp"
+                android:src="@drawable/_07_sunset"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunset_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/_6_03_am"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunset" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/snrise"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunset_tv" />
+
+            <ImageView
+                android:id="@+id/sunrise"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="250dp"
+                android:src="@drawable/_08_sunrise"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunrise_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:text="@string/_7_05_pm"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunrise" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="182dp"
+                android:text="@string/sunset"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunrise_tv" />
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="255dp"
+                android:src="@drawable/vector__1_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/clock_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="305dp"
+                android:text="@string/_13h_1m"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:text="@string/daytime"
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunrise_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="6dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="120dp"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/hazy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/_16_hazy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/wed_22"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hazy" />
+
+            <TextView
+                android:id="@+id/hazy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="65dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="34" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__3_"
+                app:layout_constraintStart_toEndOf="@id/hazy1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hazy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="25dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="29" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__4_"
+                app:layout_constraintStart_toEndOf="@id/hazy2"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="6dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/cloud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/vector__2_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/wed_22"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cloud" />
+
+            <TextView
+                android:id="@+id/cloud1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="95dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="35" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__4_"
+                app:layout_constraintStart_toEndOf="@id/cloud1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cloud2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="55dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="27" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__3_"
+                app:layout_constraintStart_toEndOf="@id/cloud2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="6dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/sunny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/_07_sunny_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/mon_21"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sunny" />
+
+            <TextView
+                android:id="@+id/sunnytv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="95dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="35" />
+
+            <View
+                android:id="@+id/sunny1"
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__4_"
+                app:layout_constraintStart_toEndOf="@id/sunnytv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunnyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="55dp"
+                android:textSize="11sp"
+                app:drawableEndCompat="@drawable/gradus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="26" />
+
+            <View
+                android:id="@+id/sunny2"
+                android:layout_width="5dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/vector__3_"
+                app:layout_constraintStart_toEndOf="@id/sunnyt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
